@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Builder/Builder.iml" filepath="$PROJECT_DIR$/Builder/Builder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FactoryMethod/FactoryMethod.iml" filepath="$PROJECT_DIR$/FactoryMethod/FactoryMethod.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FactorySimple/FactorySimple.iml" filepath="$PROJECT_DIR$/FactorySimple/FactorySimple.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Prototype/Prototype.iml" filepath="$PROJECT_DIR$/Prototype/Prototype.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Singleton/Singleton.iml" filepath="$PROJECT_DIR$/Singleton/Singleton.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SingletonSimplu/SingletonSimplu.iml" filepath="$PROJECT_DIR$/SingletonSimplu/SingletonSimplu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TestPrep.iml" filepath="$PROJECT_DIR$/TestPrep.iml" />
+    </modules>
+  </component>
+</project>
