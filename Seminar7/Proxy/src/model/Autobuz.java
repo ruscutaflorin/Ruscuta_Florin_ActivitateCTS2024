@@ -1,0 +1,30 @@
+package model;
+
+public class Autobuz implements AutobuzAbstract{
+    private int nrCalatori;
+    private int nrAutobuz;
+    private String numeSofer;
+
+    public Autobuz(int nrCalatori, int nrAutobuz, String numeSofer) {
+        this.nrCalatori = nrCalatori;
+        this.nrAutobuz = nrAutobuz;
+        this.numeSofer = numeSofer;
+    }
+
+    @Override
+    public void opresteStatie(String numeStatie) {
+        System.out.println("Autobuzul " + nrAutobuz + " condus de " + numeSofer + " a oprit in statia " + numeStatie);
+    }
+
+    public int getNrCalatori() {
+        return nrCalatori;
+    }
+
+    public int getNrAutobuz() {
+        return nrAutobuz;
+    }
+
+    public String getNumeSofer() {
+        return numeSofer;
+    }
+}
