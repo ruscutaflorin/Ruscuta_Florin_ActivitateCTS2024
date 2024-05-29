@@ -21,7 +21,7 @@ public class Persoana implements IPersoana{
 	}
 	
 	public String getSex(){
-		if( CNP==null  || CNP.length() <= 0 ){
+		if( CNP==null  || CNP.length() < 0 ){
 			throw new IllegalArgumentException();
 		}
 		switch(CNP.charAt(0)){

@@ -1,31 +1,38 @@
 package JUnit;
 
+import JUnit.Categorii.TesteEroare;
+import JUnit.Categorii.TesteRange;
 import Model.IPersoana;
 import Model.Persoana;
 import org.junit.Test;
+import org.junit.experimental.categories.Category;
 
 import static org.junit.Assert.*;
 
 public class PersoanaTest {
 
     @org.junit.Test
+    @Category(TesteRange.class)
     public void testGetSexMasculin() {
         IPersoana persoana = new Persoana("Florin", "5020202123456");
         assertEquals("M", persoana.getSex());
     }
     @org.junit.Test
+    @Category(TesteRange.class)
     public void testGetSexFeminin() {
         IPersoana persoana = new Persoana("Florina", "4020202123456");
         assertEquals("F", persoana.getSex());
     }
 
     @org.junit.Test
+    @Category(TesteRange.class)
     public void testGetMinBoundaries() {
         IPersoana persoana = new Persoana("Florin", "1020202123456");
         assertEquals("M", persoana.getSex());
     }
 
     @org.junit.Test
+    @Category(TesteRange.class)
     public void testGetMaxBoundaries() {
         IPersoana persoana = new Persoana("Florin", "6020202123456");
         assertEquals("F", persoana.getSex());
@@ -39,13 +46,16 @@ public class PersoanaTest {
         assertEquals("F", persoana.getSex());
     }
 
+
     @org.junit.Test(expected = IllegalArgumentException.class)
+    @Category(TesteEroare.class)
     public void testError(){
         Persoana persoana = new Persoana("Ramona", "-020202123456");
         persoana.getSex();
     }
 
     @org.junit.Test(expected = StringIndexOutOfBoundsException.class)
+    @Category(TesteEroare.class)
     public void testNoCNP(){
         Persoana persoana = new Persoana("Ramona", "");
         persoana.getSex();
@@ -71,7 +81,9 @@ public class PersoanaTest {
         assertTrue(persoana.getSex().compareTo(persoana2.getSex()) <0 );
     }
 
+
     @Test(expected = IllegalArgumentException.class)
+    @Category(TesteEroare.class)
     public void testSexExistence(){
         Persoana persoana = new Persoana("Ramona", null);
         persoana.getSex();
